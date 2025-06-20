@@ -23,7 +23,7 @@ To run SPADE properly, Your computer should have:
 
 ## Data Requirement
 
-SPADE requires three inputs:
+SPADE has two mendatory input and other optional inputs:
 
 - Single-cell RNA-seq gene expression data
 - Spatial transcriptomic gene expression data
@@ -34,13 +34,22 @@ SPADE requires three inputs:
 
 ## Quick Start
 
-Suppose you have prepared the input data `sc.csv` for scRNA-seq expression, `st.csv` for ST gene expression, `location.csv` for ST coordinates
+Suppose you have prepared the input data `sc.csv` for scRNA-seq expression, `st.csv` for ST gene expression, `location.csv` for ST coordinates, `annotation.csv` for single-cell annotation, run:
 
-`python Run_SPADE.py `
+`python Run_SPADE.py -s st.csv -r sc.csv -a annotation.csv -c location.csv`
 
 ## Full Usage
 
+SPADE have command parameters below:
 
+| Short Argument | Full Argument   | Type    | Default      | Description               |
+|:-----|:------------|:---------|:--------------|:--------------------------------------|
+|`-s`| `--st`   | `str`   |  Mandatory    | Path to the input file.                      |
+|`-r`| `--sc`  | `str`   |  Mandatory| Path to save the output file.                |
+|`-a`| `--sc_anno`  | `str`   | ` `          | Number of training epochs.                   |
+|`-c`| `--st_coord`      | `str` | ` `       | Learning rate for the optimizer.             |
+|`-o`| `--outputpath` | `str`  | `./`       | If set, enables verbose logging.             |
+|| `--useAllGenes`    | `int`   | `42`          | Random seed for reproducibility.             |
 
 ## Commercial Use
 
