@@ -44,12 +44,12 @@ SPADE have command parameters below:
 
 | Short Argument | Full Argument   | Type    | Default      | Description               |
 |:-----|:------------|:---------|:--------------|:--------------------------------------|
-|`-s`| `--st`   | `str`   |  Mandatory    | Path to the input file.                      |
-|`-r`| `--sc`  | `str`   |  Mandatory| Path to save the output file.                |
-|`-a`| `--sc_anno`  | `str`   | ` `          | Number of training epochs.                   |
-|`-c`| `--st_coord`      | `str` | ` `       | Learning rate for the optimizer.             |
-|`-o`| `--outputpath` | `str`  | `./`       | If set, enables verbose logging.             |
-|| `--useAllGenes`    | `int`   | `42`          | Random seed for reproducibility.             |
+|`-s`| `--st`   | `str`   |  Mandatory    | Path to the ST expression file                      |
+|`-r`| `--sc`  | `str`   |  Mandatory| Path to the SC expression file                |
+|`-a`| `--sc_anno`  | `str`   | ` `          | Path to the SC annotation file                   |
+|`-c`| `--st_coord`      | `str` | ` `       | Path to the ST coordinate file             |
+|`-o`| `--outputpath` | `str`  | `./`       | Path to save the output file             |
+|| `--useAllGenes`    | `boolean`   | `False`          | If set, use all genes instead of marker genes             |
 
 ## Commercial Use
 
