@@ -38,6 +38,10 @@ Suppose you have prepared the input data `sc.csv` for scRNA-seq expression, `st.
 
 `python Run_SPADE.py -s st.csv -r sc.csv -a annotation.csv -c location.csv`
 
+Or simply run without the CCC evaluation:
+
+`python Run_SPADE.py -s st.csv -r sc.csv`
+
 ## Full Usage
 
 SPADE have command parameters below:
@@ -46,8 +50,8 @@ SPADE have command parameters below:
 |:-----|:------------|:---------|:--------------|:--------------------------------------|
 |`-s`| `--st`   | `str`   |  Mandatory    | Path to the ST expression file                      |
 |`-r`| `--sc`  | `str`   |  Mandatory| Path to the SC expression file                |
-|`-a`| `--sc_anno`  | `str`   | ` `          | Path to the SC annotation file                   |
-|`-c`| `--st_coord`      | `str` | ` `       | Path to the ST coordinate file             |
+|`-a`| `--sc_anno`  | `str`   | ` `          | Path to the SC annotation file. If not specificied, SPADE run without CCC evaluation.                 |
+|`-c`| `--st_coord`      | `str` | ` `       | Path to the ST coordinate file. If not specificied, SPADE run without CCC evaluation.             |
 |`-o`| `--outputpath` | `str`  | `./`       | Path to save the output file             |
 || `--useAllGenes`    | `boolean`   | `False`          | If set, use all genes instead of marker genes             |
 
