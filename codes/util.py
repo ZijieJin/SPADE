@@ -205,7 +205,7 @@ def RunAlgorithm(X, Y, anno, I, D=0, outpath = './', genelist = []):
 
     Wp_np = Wp.cpu().detach().numpy()
     Wp_np_df = pd.DataFrame(Wp_np, index=scName_part, columns=spName_part)
-    Wp_np_df_full = pd.DataFrame(0, index=scName_full, columns=spName_full)
+    Wp_np_df_full = pd.DataFrame(0, index=scName_full, columns=spName_full).astype(float)
     Wp_np_df_full.loc[scName_part, spName_part] = Wp_np_df
     Wp_np_df_full = round(Wp_np_df_full * 1000) / 1000
     if len(genelist) > 0:
@@ -233,7 +233,7 @@ def RunAlgorithm(X, Y, anno, I, D=0, outpath = './', genelist = []):
         0,
         index=UnionGenes,
         columns=spName_full,
-    )
+    ).astype(float)
     Ytemp = Ybig.copy()
     Ytemp.loc[Yallgenes, spName_full] = Y_ori
     Ybig.loc[Xallgenes, spName_part] = PY * np.array(ratio)
