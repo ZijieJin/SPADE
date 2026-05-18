@@ -50,8 +50,8 @@ SPADE have command parameters below:
 |:-----|:------------|:---------|:--------------|:--------------------------------------|
 |`-s`| `--st`   | `str`   |  Mandatory    | Path to the ST expression file                      |
 |`-r`| `--sc`  | `str`   |  Mandatory| Path to the SC expression file                |
-|`-a`| `--sc_anno`  | `str`   | ` `          | Path to the SC annotation file. If not specificied, SPADE run without CCC evaluation.                 |
-|`-c`| `--st_coord`      | `str` | ` `       | Path to the ST coordinate file. If not specificied, SPADE run without CCC evaluation.             |
+|`-a`| `--sc_anno`  | `str`   | ` `          | Path to the SC annotation file. If not specificied, SPADE runs without CCC evaluation.                 |
+|`-c`| `--st_coord`      | `str` | ` `       | Path to the ST coordinate file. If not specificied, SPADE runs without CCC evaluation.             |
 |`-o`| `--outputpath` | `str`  | `./`       | Path to save the output file             |
 || `--useAllGenes`    | `boolean`   | `False`          | If set, use all genes instead of marker genes             |
 
