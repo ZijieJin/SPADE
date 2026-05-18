@@ -9,7 +9,7 @@ If you have any questions related to scFusion, please visit https://github.com/Z
 
 ## Software Prerequisite
 SPADE works on R and Python platform with any OS.
-- R (tested on 4.2.3)
+- R (tested on 4.2.3 and 4.5.1)
 - R package: stringr, entropy, pracma, RcppML, NMF, matrixStats, progress
 - Python (tested on 3.12)
 - Python modules: numpy (tested on 1.26.4), pandas (tested on 2.2.3), torch (tested on 2.5.0), scikit-learn (tested on 1.5.2), argparse, os
